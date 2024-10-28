@@ -1,20 +1,12 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# European Telecoms Network
+## COMP1815 - Group 34 | University of Greenwich
+## Introduction
+EuroConnect Telecommunications, a telecommunications provider, plans to expand its high-speed fiber-optic
+network across all European capital cities. To optimize costs and ensure efficient connectivity, EuroConnect
+aims to establish the network using a minimum spanning tree (MST) that will connect all capital cities with the
+minimum total cable length.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+The project requires the design and implementation of an MST that links all European capitals, ensuring
+reliable and cost-effective communication infrastructure across the continent.
+## Group members
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
