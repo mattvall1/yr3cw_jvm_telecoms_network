@@ -2,12 +2,12 @@ package main
 
 class Edge(private val v: String, private val w: Int) {
     // returns the vertex of the edge
-    fun get_vertex(): String {
+    fun getVertex(): String {
         return v
     }
 
     // returns the weight of the edge
-    fun get_weight(): Int {
+    fun getWeight(): Int {
         return w
     }
 
