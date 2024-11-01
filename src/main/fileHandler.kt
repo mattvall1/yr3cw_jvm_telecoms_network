@@ -3,7 +3,7 @@ package main
 import java.io.File
 import java.io.FileNotFoundException
 
-class FileHandler(private val file: String, private val backupFile: String) {
+class fileHandler(private val file: String, private val backupFile: String) {
     fun readFile(): MutableList<Triple<String, String, Int>> {
         // data structure for lines in the file
         val data = mutableListOf<Triple<String, String, Int>>()

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/kotlin-cw.iml" filepath="$PROJECT_DIR$/kotlin-cw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yr3cw_jvm_prog.iml" filepath="$PROJECT_DIR$/yr3cw_jvm_prog.iml" />
     </modules>
   </component>
 </project>

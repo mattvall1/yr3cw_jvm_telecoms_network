@@ -8,7 +8,7 @@ class App {
         println("Enter filename: ")
         val file = readlnOrNull()
 
-        val fileHandler = FileHandler(path + file, backupFile)
+        val fileHandler = fileHandler(path + file, backupFile)
         val graph = Graph(fileHandler.readFile())
 
         println(graph)
