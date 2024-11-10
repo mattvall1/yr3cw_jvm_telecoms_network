@@ -1,18 +1,22 @@
 package main
 
-class Edge(private val v: String, private val w: Int) {
+class Edge(private val source: String, private val destination: String, private val weight: Int) {
     // returns the vertex of the edge
-    fun getVertex(): String {
-        return v
+    fun getSourceVertex(): String {
+        return source
+    }
+
+    fun getDestinationVertex(): String {
+        return destination
     }
 
     // returns the weight of the edge
     fun getWeight(): Int {
-        return w
+        return weight
     }
 
     // override the toString method to print the edge
     override fun toString(): String {
-        return "($v, $w)"
+        return "($destination, $weight)"
     }
 }

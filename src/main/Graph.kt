@@ -9,24 +9,24 @@ class Graph(private val data: MutableList<Triple<String, String, Int>>) {
 
         // first go over the graph and add the vertices
         for (line in data) {
-            val u = line.first
-            val v = line.second
+            val source = line.first // u
+            val destination = line.second // v
 
-            if (!graph.containsKey(u))
-                graph[u] = mutableSetOf()
+            if (!graph.containsKey(source))
+                graph[source] = mutableSetOf()
 
-            if (!graph.containsKey(v))
-                graph[v] = mutableSetOf()
+            if (!graph.containsKey(destination))
+                graph[destination] = mutableSetOf()
         }
 
         // add edges to both vertices
         for (line in data) {
-            val u = line.first
-            val v = line.second
-            val w = line.third
+            val source = line.first // u
+            val destination = line.second // v
+            val weight = line.third // w
 
-            graph[u]?.add(Edge(v, w))
-            graph[v]?.add(Edge(u, w))
+            graph[source]?.add(Edge(source, destination, weight))
+            graph[destination]?.add(Edge(source, destination, weight))
         }
 
         return graph
@@ -40,5 +40,21 @@ class Graph(private val data: MutableList<Triple<String, String, Int>>) {
         }
 
         return str
+    }
+
+    fun getEdges(): MutableList<Edge> {
+        val edges = mutableListOf<Edge>()
+
+        for ((_, edgeSet) in graph) {
+            for (edge in edgeSet) {
+                edges.add(edge)
+            }
+        }
+
+        return edges
+    }
+
+    fun getVertices(): MutableList<String> {
+        return graph.keys.toMutableList()
     }
 }
