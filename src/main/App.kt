@@ -29,7 +29,16 @@ class App {
                 // Print graph
                 println(graph)
             } else if (selectedOption == 2) {
+                // Create MST class
+                val MST = minimumSpanningTree(graph)
+
                 // Create MST and print
+                val mst = MST.getMST()
+                val cableLength = MST.getTotalCableLength()
+                println("Minimum Spanning Tree: $mst")
+                println("Minimum Cable Length: $cableLength")
+
+
                 continue
             } else if (selectedOption == 3) {
                 // Terminate program normally

@@ -1,6 +1,6 @@
 package main
 
-class Edge(private val source: String, private val destination: String, private val weight: Int) {
+class Edge(val source: String, val destination: String, private val weight: Int) {
     // returns the vertex of the edge
     fun getSourceVertex(): String {
         return source
