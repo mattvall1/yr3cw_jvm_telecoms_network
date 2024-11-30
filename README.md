@@ -6,7 +6,9 @@ network across all European capital cities. To optimize costs and ensure efficie
 aims to establish the network using a minimum spanning tree (MST) that will connect all capital cities with the
 minimum total cable length.
 
-The project requires the design and implementation of an MST that links all European capitals, ensuring
-reliable and cost-effective communication infrastructure across the continent.
 ## Group members
+- **Matthew Vallance** - mv5742c@gre.ac.uk
+- **Jake Brown** - jb3474t@gre.ac.uk
+- **Deanna White** - kw5189t@gre.ac.uk
+- **Deeya Patel** - dp4381f@gre.ac.uk
 
