@@ -38,7 +38,6 @@ class App {
                 println("Minimum Spanning Tree: $mst")
                 println("Minimum Cable Length: $cableLength")
 
-
                 continue
             } else if (selectedOption == 3) {
                 // Terminate program normally
