@@ -25,8 +25,13 @@ class Graph(private val data: MutableList<Triple<String, String, Int>>) {
             val destination = line.second // v
             val weight = line.third // w
 
-            graph[source]?.add(Edge(source, destination, weight))
-            graph[destination]?.add(Edge(source, destination, weight))
+            // Add sources and destination and weights to the graph, only if the do not already exist
+            if (graph[source]?.none { it.destination == destination } == true) {
+                graph[source]?.add(Edge(source, destination, weight))
+            }
+            if (graph[destination]?.none { it.destination == source } == true) {
+                graph[destination]?.add(Edge(destination, source, weight))
+            }
         }
 
         return graph
