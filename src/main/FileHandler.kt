@@ -3,7 +3,7 @@ package main
 import java.io.File
 import java.io.FileNotFoundException
 
-class fileHandler(private val file: String, private val backupFile: String) {
+class FileHandler(private val file: String, private val backupFile: String) {
     fun readFile(): MutableList<Triple<String, String, Int>> {
         // Data structure for lines in the file
         val data = mutableListOf<Triple<String, String, Int>>()
@@ -19,7 +19,7 @@ class fileHandler(private val file: String, private val backupFile: String) {
             }
         }
         catch (e: FileNotFoundException) {
-            println("File not found, using backup file")
+            println("File not found, using backup file: $backupFile")
             File(backupFile).forEachLine {
                 // Split the line by spaces
                 val line = it.split(", ")

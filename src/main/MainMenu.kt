@@ -1,6 +1,6 @@
 package main
 
-class mainMenu {
+class MainMenu {
     fun run(): Int? {
         // Loop for menu system
         var selectedOption: Int? = null
@@ -13,10 +13,15 @@ class mainMenu {
             println("2. Get Minimum Spanning Tree (MST)")
             println("3. Quit")
 
-            // Get selected option and re-print menu if invalid (TODO: Proper error checking (if not int))
+            // Get selected option and re-print menu if invalid
             println("Enter option: ")
-            selectedOption = readlnOrNull()?.toInt()
-            if(selectedOption !in validOptions) {
+            try {
+                selectedOption = readlnOrNull()?.toInt()
+            } catch (e: NumberFormatException) {
+                println("Invalid input. Please enter a number.")
+                continue
+            }
+            if (selectedOption !in validOptions) {
                 println("Invalid option")
             }
         }

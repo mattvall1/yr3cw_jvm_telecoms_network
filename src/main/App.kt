@@ -5,21 +5,26 @@ class App {
     fun run() {
         val defaultFile = "src/main/capitals.txt"
         val path = "src/main/"
+        var createdGraph = false
+        var cityGraph = Graph(mutableListOf())
 
         // Ask user for filename input and create graph from data
-        println("Enter filename: ")
-        val file = readlnOrNull()
-        val fileHandler = fileHandler(path + file, defaultFile)
-        val graph = Graph(fileHandler.readFile())
+        while(!createdGraph) {
+            println("Enter filename: ")
+            val file = readlnOrNull()
+            val fileHandler = FileHandler(path + file, defaultFile)
+            cityGraph = Graph(fileHandler.readFile())
 
-        // Check graph created successfully (TODO: better error handling)
-        if (graph.toString() == "") {
-            println("Graph not created successfully")
-            return
+            // Check graph created successfully
+            if (cityGraph.toString() == "") {
+                println("Graph not created")
+            } else {
+                createdGraph = true
+            }
         }
 
         // View main menu
-        val mainMenu = mainMenu()
+        val mainMenu = MainMenu()
         while (true) {
             // Open menu
             val selectedOption = mainMenu.run()
@@ -27,14 +32,14 @@ class App {
             // Handle menu options
             if (selectedOption == 1) {
                 // Print graph
-                println(graph)
+                println(cityGraph)
             } else if (selectedOption == 2) {
                 // Create MST class
-                val MST = minimumSpanningTree(graph)
+                val minimumSpanningTree = minimumSpanningTree(cityGraph)
 
                 // Create MST and print
-                val mst = MST.getMST()
-                val cableLength = MST.getTotalCableLength()
+                val mst = minimumSpanningTree.getMST()
+                val cableLength = minimumSpanningTree.getTotalCableLength()
                 println("Minimum Spanning Tree: $mst")
                 println("Minimum Cable Length: $cableLength")
 
