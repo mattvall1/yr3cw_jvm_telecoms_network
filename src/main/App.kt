@@ -35,7 +35,7 @@ class App {
                 println(cityGraph)
             } else if (selectedOption == 2) {
                 // Create MST class
-                val minimumSpanningTree = minimumSpanningTree(cityGraph)
+                val minimumSpanningTree = MinimumSpanningTree(cityGraph)
 
                 // Create MST and print
                 val mst = minimumSpanningTree.getMST()

@@ -1,7 +1,7 @@
 package main
 
 // Minimum Spanning Tree - Kruskal's Algorithm
-class minimumSpanningTree(graph: Graph) {
+class MinimumSpanningTree(graph: Graph) {
     private val sortedEdges = graph.getEdges().sortedBy { it.getWeight() } // Sort edges by weight
     private val vertices = graph.getVertices()
     private val parent = mutableMapOf<String, String>()
