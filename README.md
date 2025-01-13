@@ -7,8 +7,8 @@ aims to establish the network using a minimum spanning tree (MST) that will conn
 minimum total cable length.
 
 ## Group members
-- **Matthew Vallance** - mv5742c@gre.ac.uk
-- **Jake Brown** - jb3474t@gre.ac.uk
-- **Deanna White** - kw5189t@gre.ac.uk
-- **Deeya Patel** - dp4381f@gre.ac.uk
+- **Matthew Vallance**
+- **Jake Brown**
+- **Deanna White**
+- **Deeya Patel**
 
