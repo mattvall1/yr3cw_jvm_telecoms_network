@@ -9,4 +9,4 @@ minimum total cable length.
 ### Notes
 - This coursework received an 85% grade, the highest grade
 - This coursework was a group coursework
-- The task_documents folder contains the specifications and submission for this coursework
+- The task_documents folder contains the specifications, submission and feedback for this coursework
