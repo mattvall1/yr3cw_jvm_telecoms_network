@@ -1,6 +1,5 @@
-# 2024 Year 3 JVM Programming - 
-## COMP1815 - JVM Programming Languages
-### University of Greenwich
+# 2024 Year 3 JVM Programming - COMP1815 JVM Programming Languages coursework
+## University of Greenwich- Computer Science BSc
 ### The Task
 EuroConnect Telecommunications, a telecommunications provider, plans to expand its high-speed fiber-optic
 network across all European capital cities. To optimize costs and ensure efficient connectivity, EuroConnect
